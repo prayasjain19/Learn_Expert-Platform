@@ -76,11 +76,12 @@ export default function EnrolledCourses() {
               <div className="w-1/4 px-2 py-3">{course?.totalDuration}</div>
               <div className="flex w-1/5 flex-col gap-2 px-2 py-3">
                 <p>Progress: {course.progressPercentage || 0}%</p>
-                <nProgress
-                  completed={course.progressPercentage || 0}
-                  height="8px"
-                  isLabelVisible={false}
-                />
+                <div className="relative w-full h-2 bg-gray-300 rounded-md">
+              <div
+              className="absolute left-0 h-2 bg-blue-500 rounded-md transition-all duration-500"
+              style={{ width: `${course.progressPercentage || 0}%` }}
+                ></div>
+              </div>
               </div>
             </div>
           ))}
