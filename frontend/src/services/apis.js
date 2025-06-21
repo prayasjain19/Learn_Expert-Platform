@@ -1,4 +1,4 @@
-const BASE_URL = "https://studynotion-platform.onrender.com/api/v1";
+const BASE_URL = "https://learn-expert-platform.onrender.com/api/v1";
 
 
 console.log({ BASE_URL })
