@@ -28,7 +28,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		origin: "http://studynotion-platform.onrender.com ",
+		origin: "https://learn-expert-platform.onrender.com",
 		credentials: true,
 	})
 )
